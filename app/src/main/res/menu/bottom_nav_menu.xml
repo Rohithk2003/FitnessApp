@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:enabled="true"
+        android:id="@+id/home_bottombar"
+        android:icon="@drawable/baseline_home_24"
+        android:title="@string/menu_home"
+        android:titleTextStyle="@style/MenuItemTextSize" />
+    <item
+        android:id="@+id/settings_bottombar"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/menu_settings"
+        android:titleTextStyle="@style/MenuItemTextSize" />
+</menu>

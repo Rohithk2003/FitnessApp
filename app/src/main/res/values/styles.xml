@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MenuItemTextSize">
+        <item name="android:textSize">1000sp</item>
+    </style>
+</resources>
