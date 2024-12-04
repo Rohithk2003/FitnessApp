@@ -13,7 +13,11 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.fitness.fitnessapp.databinding.ActivityMainBinding;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+    public List<String> queries;
     ActivityMainBinding binding;
     @SuppressLint("NonConstantResourceId")
     @Override
@@ -27,13 +31,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        replaceFragment(new HomeFragment());
+        queries = new ArrayList<>();
+        replaceFragment(new HomeFragment(queries));
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             int i = item.getItemId();
             if (i == R.id.home_bottombar) {
-                replaceFragment(new HomeFragment());
+                replaceFragment(new HomeFragment(queries));
             } else if (i == R.id.settings_bottombar) {
-                replaceFragment(new SettingsFragment());
+                replaceFragment(new SettingsFragment(queries));
             }
 
             return true;

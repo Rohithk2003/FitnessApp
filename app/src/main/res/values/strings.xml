@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">FitnessApp</string>
     <string name="menu_home">Home</string>
-    <string name="menu_settings">Settings</string>
+    <string name="menu_settings">History</string>
     <string name="hello_blank_fragment">Welcome to home fragment</string>
     <string name="home_bottom_navbar_id">home</string>
     <string name="settings_bottom_navbar_id">settings</string>
     <string name="home_main_text">Fitness App</string>
+    <string name="search_for_a_workout">Search for a workout</string>
 </resources>
